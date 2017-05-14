@@ -1,0 +1,70 @@
+# Build and synthezise the SystemC model and player
+# ==============================================
+
+1.  Create a build directory (e.g. <project_dir>/build)
+    $> mkdir build
+
+2.  Change into build directory
+    $> cd build
+    
+3.  Run CMake:
+    $> cmake -DSYSTEMC_HOME=<path_to_systemc> ..
+
+
+# Build and run the MP3 player
+# ==============================================
+  From the build directory run:
+    $> make play
+	
+
+# Run the SystemC simulation:
+# ==============================================
+  From the build directory run:
+    $> make sim
+
+
+# Run Vivado HLS C Simulation
+# ==============================================
+  From build directory run
+    $> make csim
+
+
+# Run Vivado High-Level Synthesis
+# ==============================================
+  From build directory run
+    $> make hls
+ 
+
+# Open Vivado High-Level Synthesis GUI
+# ==============================================
+  From build directory run
+    $> make hlsgui
+
+ 
+# Run RTL Co-Simulation
+# ==============================================
+  From build directory run
+    $> make cosim
+
+
+# Create IP package for Filter module
+# ==============================================
+  From build directory run
+    $> make export
+
+
+# Run Vivado RTL Synthesis
+# ==============================================
+  From build directory run
+    $> make vivado
+
+    Click on "Generate bitstream" in the left panel
+    Confirm with "OK"
+
+The bitfile that is generated, is called "xillydemo.bit"
+and is located in <project_dir>/verilog/vivado/runs.impl_1
+
+
+
+
+    
